@@ -1,0 +1,6 @@
+Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_msgs
+Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_msgs
+Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_msgs -- -j32 -l32
+Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_msgs -- -j32 -l32
+Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_msgs
+Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_msgs

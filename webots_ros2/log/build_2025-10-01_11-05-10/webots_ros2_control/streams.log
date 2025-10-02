@@ -1,0 +1,88 @@
+[0.007s] Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_control
+[0.117s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.117s] -- Detecting C compiler ABI info
+[0.117s] -- Detecting C compiler ABI info - done
+[0.117s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.117s] -- Detecting C compile features
+[0.117s] -- Detecting C compile features - done
+[0.117s] -- Detecting CXX compiler ABI info
+[0.135s] -- Detecting CXX compiler ABI info - done
+[0.140s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.140s] -- Detecting CXX compile features
+[0.141s] -- Detecting CXX compile features - done
+[0.142s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.219s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.262s] -- Found hardware_interface: 2.46.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.282s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.285s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.289s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.295s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.416s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.429s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.450s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.452s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.459s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.461s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.465s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.470s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.474s] -- Looking for pthread.h
+[0.509s] -- Looking for pthread.h - found
+[0.509s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.543s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.544s] -- Found Threads: TRUE  
+[0.567s] -- Found controller_manager: 2.46.0 (/opt/ros/humble/share/controller_manager/cmake)
+[0.591s] -- Found webots_ros2_driver: 2023.1.3 (/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/cmake)
+[0.602s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.603s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.603s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.708s] -- Configuring done
+[0.748s] -- Generating done
+[0.752s] -- Build files have been written to: /mnt/dev/webots_ros2/build/webots_ros2_control
+[0.759s] Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_control
+[0.759s] Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_control -- -j32 -l32
+[0.782s] [ 25%] [32mBuilding CXX object CMakeFiles/webots_ros2_control_system.dir/src/Ros2ControlSystem.cpp.o[0m
+[0.782s] [ 50%] [32mBuilding CXX object CMakeFiles/webots_ros2_control.dir/src/Ros2Control.cpp.o[0m
+[2.581s] [ 75%] [32m[1mLinking CXX shared library libwebots_ros2_control_system.so[0m
+[2.667s] [ 75%] Built target webots_ros2_control_system
+[3.657s] [100%] [32m[1mLinking CXX shared library libwebots_ros2_control.so[0m
+[3.834s] [100%] Built target webots_ros2_control
+[3.840s] Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_control -- -j32 -l32
+[3.841s] Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_control
+[3.843s] -- Install configuration: ""
+[3.843s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/webots_ros2_control.xml
+[3.843s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/webots_ros2_control_system.xml
+[3.843s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/lib/libwebots_ros2_control.so
+[3.844s] -- Set runtime path of "/mnt/dev/webots_ros2/install/webots_ros2_control/lib/libwebots_ros2_control.so" to ""
+[3.844s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/lib/libwebots_ros2_control_system.so
+[3.844s] -- Set runtime path of "/mnt/dev/webots_ros2/install/webots_ros2_control/lib/libwebots_ros2_control_system.so" to ""
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/include
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/include/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/include/webots_ros2_control/Ros2ControlSystemInterface.hpp
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/include/webots_ros2_control/Ros2Control.hpp
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/include/webots_ros2_control/Ros2ControlSystem.hpp
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/library_path.sh
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/library_path.dsv
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/ament_index/resource_index/package_run_dependencies/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/ament_index/resource_index/parent_prefix_path/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/ament_prefix_path.sh
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/ament_prefix_path.dsv
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/path.sh
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/environment/path.dsv
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/local_setup.bash
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/local_setup.sh
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/local_setup.zsh
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/local_setup.dsv
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.dsv
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/ament_index/resource_index/packages/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/ament_index/resource_index/webots_ros2_control__pluginlib__plugin/webots_ros2_control
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/cmake/webots_ros2_controlConfig.cmake
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/cmake/webots_ros2_controlConfig-version.cmake
+[3.845s] -- Installing: /mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.xml
+[3.847s] Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_control

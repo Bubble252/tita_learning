@@ -1,0 +1,834 @@
+[0.112s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.112s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1f5c3975b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1f5c396fb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1f5c396fb0>>)
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.208s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/dev/webots_ros2'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2' with type 'ros.ament_python' and name 'webots_ros2'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_control' with type 'ros.ament_cmake' and name 'webots_ros2_control'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_driver' with type 'ros.ament_cmake' and name 'webots_ros2_driver'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_epuck' with type 'ros.ament_python' and name 'webots_ros2_epuck'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_importer' with type 'ros.ament_python' and name 'webots_ros2_importer'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_mavic' with type 'ros.ament_python' and name 'webots_ros2_mavic'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_msgs' with type 'ros.ament_cmake' and name 'webots_ros2_msgs'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tesla' with type 'ros.ament_python' and name 'webots_ros2_tesla'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tests' with type 'ros.ament_python' and name 'webots_ros2_tests'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tiago' with type 'ros.ament_python' and name 'webots_ros2_tiago'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_turtlebot' with type 'ros.ament_python' and name 'webots_ros2_turtlebot'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_universal_robot' with type 'ros.ament_python' and name 'webots_ros2_universal_robot'
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.252s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_importer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_importer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_importer', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_importer', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_msgs', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_driver', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_control', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_mavic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_mavic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_mavic', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_mavic', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tesla' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_tesla', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_tesla', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tesla', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_epuck' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_epuck', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_epuck', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_epuck', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tiago' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_tiago', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_tiago', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tiago', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_turtlebot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_turtlebot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_turtlebot', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_universal_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_universal_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_universal_robot', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2_tests', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tests', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/webots_ros2/build/webots_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/webots_ros2/install/webots_ros2', 'merge_install': False, 'path': '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.271s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.272s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_importer' with build type 'ament_python'
+[0.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_importer', 'ament_prefix_path')
+[0.275s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.ps1'
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.dsv'
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.sh'
+[0.276s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.276s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.277s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs' with build type 'ament_cmake'
+[0.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs'
+[0.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_importer'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_msgs
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_importer': PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_importer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_importer build --build-base /mnt/dev/webots_ros2/build/webots_ros2_importer/build install --record /mnt/dev/webots_ros2/build/webots_ros2_importer/install.log --single-version-externally-managed install_data
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_importer' returned '0': PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_importer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_importer build --build-base /mnt/dev/webots_ros2/build/webots_ros2_importer/build install --record /mnt/dev/webots_ros2/build/webots_ros2_importer/install.log --single-version-externally-managed install_data
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer' for CMake module files
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer' for CMake config files
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer/lib'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer/bin'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/pkgconfig/webots_ros2_importer.pc'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages'
+[0.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_importer', 'pythonpath')
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/pythonpath.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/pythonpath.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/hook/pythonpath.sh'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_importer/bin'
+[0.714s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_importer)
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.ps1'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.sh'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.zsh'
+[0.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_importer/share/colcon-core/packages/webots_ros2_importer)
+[1.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_msgs -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_msgs
+[1.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_msgs -- -j32 -l32
+[3.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_msgs -- -j32 -l32
+[3.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_msgs
+[3.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_msgs)
+[3.673s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs' for CMake module files
+[3.673s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs' for CMake config files
+[3.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_msgs
+[3.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_msgs', 'cmake_prefix_path')
+[3.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.ps1'
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.dsv'
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.sh'
+[3.674s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib'
+[3.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_msgs', 'ld_library_path_lib')
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.ps1'
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.dsv'
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.sh'
+[3.674s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/bin'
+[3.674s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib/pkgconfig/webots_ros2_msgs.pc'
+[3.675s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib/python3.10/site-packages'
+[3.675s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/bin'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.ps1'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.dsv'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.sh'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.bash'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.zsh'
+[3.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/colcon-core/packages/webots_ros2_msgs)
+[3.676s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_msgs)
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs' for CMake module files
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs' for CMake config files
+[3.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_msgs', 'cmake_prefix_path')
+[3.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.ps1'
+[3.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.dsv'
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/cmake_prefix_path.sh'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib'
+[3.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_msgs', 'ld_library_path_lib')
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.ps1'
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.dsv'
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/hook/ld_library_path_lib.sh'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/bin'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib/pkgconfig/webots_ros2_msgs.pc'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib/python3.10/site-packages'
+[3.678s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_msgs/bin'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.ps1'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.dsv'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.sh'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.bash'
+[3.679s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.zsh'
+[3.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/colcon-core/packages/webots_ros2_msgs)
+[3.679s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_driver' with build type 'ament_cmake'
+[3.679s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_driver'
+[3.679s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.679s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_driver': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_driver -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_driver
+[4.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_driver' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_driver -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_driver
+[4.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_driver': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_driver -- -j32 -l32
+[21.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_driver' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_driver -- -j32 -l32
+[21.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_driver': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_driver
+[22.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_driver)
+[22.069s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver' for CMake module files
+[22.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_driver' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_driver
+[22.069s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver' for CMake config files
+[22.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_driver', 'cmake_prefix_path')
+[22.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.ps1'
+[22.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.dsv'
+[22.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.sh'
+[22.070s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib'
+[22.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_driver', 'ld_library_path_lib')
+[22.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.ps1'
+[22.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.dsv'
+[22.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.sh'
+[22.071s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/bin'
+[22.071s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib/pkgconfig/webots_ros2_driver.pc'
+[22.071s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib/python3.10/site-packages'
+[22.071s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/bin'
+[22.071s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.ps1'
+[22.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.dsv'
+[22.071s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.sh'
+[22.072s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.bash'
+[22.072s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.zsh'
+[22.072s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_driver/share/colcon-core/packages/webots_ros2_driver)
+[22.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_driver)
+[22.072s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver' for CMake module files
+[22.072s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver' for CMake config files
+[22.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_driver', 'cmake_prefix_path')
+[22.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.ps1'
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.dsv'
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/cmake_prefix_path.sh'
+[22.073s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib'
+[22.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_driver', 'ld_library_path_lib')
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.ps1'
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.dsv'
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/hook/ld_library_path_lib.sh'
+[22.074s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/bin'
+[22.074s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib/pkgconfig/webots_ros2_driver.pc'
+[22.074s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/lib/python3.10/site-packages'
+[22.074s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_driver/bin'
+[22.074s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.ps1'
+[22.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.dsv'
+[22.074s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.sh'
+[22.075s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.bash'
+[22.075s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.zsh'
+[22.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_driver/share/colcon-core/packages/webots_ros2_driver)
+[22.075s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control' with build type 'ament_cmake'
+[22.075s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control'
+[22.075s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.075s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.077s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_mavic' with build type 'ament_python'
+[22.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_mavic', 'ament_prefix_path')
+[22.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/ament_prefix_path.ps1'
+[22.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/ament_prefix_path.dsv'
+[22.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/ament_prefix_path.sh'
+[22.078s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.078s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.079s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tesla' with build type 'ament_python'
+[22.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tesla', 'ament_prefix_path')
+[22.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/ament_prefix_path.ps1'
+[22.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/ament_prefix_path.dsv'
+[22.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/ament_prefix_path.sh'
+[22.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_control
+[22.189s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_mavic'
+[22.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.306s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tesla'
+[22.306s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.306s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_mavic': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_mavic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_mavic build --build-base /mnt/dev/webots_ros2/build/webots_ros2_mavic/build install --record /mnt/dev/webots_ros2/build/webots_ros2_mavic/install.log --single-version-externally-managed install_data
+[22.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tesla': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tesla/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tesla build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tesla/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tesla/install.log --single-version-externally-managed install_data
+[22.591s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic' for CMake module files
+[22.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_mavic' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_mavic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_mavic build --build-base /mnt/dev/webots_ros2/build/webots_ros2_mavic/build install --record /mnt/dev/webots_ros2/build/webots_ros2_mavic/install.log --single-version-externally-managed install_data
+[22.592s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic' for CMake config files
+[22.592s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib'
+[22.592s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic/bin'
+[22.592s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/pkgconfig/webots_ros2_mavic.pc'
+[22.592s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages'
+[22.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_mavic', 'pythonpath')
+[22.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/pythonpath.ps1'
+[22.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/pythonpath.dsv'
+[22.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/hook/pythonpath.sh'
+[22.593s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_mavic/bin'
+[22.593s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_mavic)
+[22.593s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.ps1'
+[22.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.dsv'
+[22.593s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.sh'
+[22.593s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.bash'
+[22.594s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.zsh'
+[22.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/colcon-core/packages/webots_ros2_mavic)
+[22.595s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla' for CMake module files
+[22.595s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla' for CMake config files
+[22.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tesla' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tesla/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tesla build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tesla/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tesla/install.log --single-version-externally-managed install_data
+[22.595s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib'
+[22.595s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla/bin'
+[22.595s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/pkgconfig/webots_ros2_tesla.pc'
+[22.596s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages'
+[22.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tesla', 'pythonpath')
+[22.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/pythonpath.ps1'
+[22.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/pythonpath.dsv'
+[22.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/hook/pythonpath.sh'
+[22.596s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tesla/bin'
+[22.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_tesla)
+[22.596s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.ps1'
+[22.597s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.dsv'
+[22.597s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.sh'
+[22.597s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.bash'
+[22.597s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.zsh'
+[22.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/colcon-core/packages/webots_ros2_tesla)
+[22.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_control -DCMAKE_INSTALL_PREFIX=/mnt/dev/webots_ros2/install/webots_ros2_control
+[22.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_control -- -j32 -l32
+[25.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/webots_ros2/build/webots_ros2_control -- -j32 -l32
+[25.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/build/webots_ros2_control': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_control
+[25.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_control)
+[25.922s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control' for CMake module files
+[25.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/build/webots_ros2_control' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/webots_ros2/build/webots_ros2_control
+[25.922s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control' for CMake config files
+[25.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_control', 'cmake_prefix_path')
+[25.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.ps1'
+[25.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.dsv'
+[25.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.sh'
+[25.923s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib'
+[25.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_control', 'ld_library_path_lib')
+[25.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.ps1'
+[25.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.dsv'
+[25.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.sh'
+[25.924s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/bin'
+[25.924s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib/pkgconfig/webots_ros2_control.pc'
+[25.924s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib/python3.10/site-packages'
+[25.924s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/bin'
+[25.924s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.ps1'
+[25.924s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.dsv'
+[25.924s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.sh'
+[25.925s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.bash'
+[25.925s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.zsh'
+[25.925s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_control/share/colcon-core/packages/webots_ros2_control)
+[25.925s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_control)
+[25.925s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control' for CMake module files
+[25.925s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control' for CMake config files
+[25.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_control', 'cmake_prefix_path')
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.ps1'
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.dsv'
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/cmake_prefix_path.sh'
+[25.926s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib'
+[25.926s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_control', 'ld_library_path_lib')
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.ps1'
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.dsv'
+[25.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/hook/ld_library_path_lib.sh'
+[25.927s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/bin'
+[25.927s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib/pkgconfig/webots_ros2_control.pc'
+[25.927s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/lib/python3.10/site-packages'
+[25.927s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_control/bin'
+[25.927s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.ps1'
+[25.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.dsv'
+[25.927s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.sh'
+[25.927s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.bash'
+[25.928s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.zsh'
+[25.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_control/share/colcon-core/packages/webots_ros2_control)
+[25.928s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_epuck' with build type 'ament_python'
+[25.928s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_epuck', 'ament_prefix_path')
+[25.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/ament_prefix_path.ps1'
+[25.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/ament_prefix_path.dsv'
+[25.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/ament_prefix_path.sh'
+[25.929s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.929s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.930s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tiago' with build type 'ament_python'
+[25.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tiago', 'ament_prefix_path')
+[25.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/ament_prefix_path.ps1'
+[25.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/ament_prefix_path.dsv'
+[25.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/ament_prefix_path.sh'
+[25.931s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.932s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_turtlebot' with build type 'ament_python'
+[25.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_turtlebot', 'ament_prefix_path')
+[25.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/ament_prefix_path.ps1'
+[25.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/ament_prefix_path.dsv'
+[25.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/ament_prefix_path.sh'
+[25.933s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.933s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.935s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_universal_robot' with build type 'ament_python'
+[25.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_universal_robot', 'ament_prefix_path')
+[25.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/ament_prefix_path.ps1'
+[25.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/ament_prefix_path.dsv'
+[25.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/ament_prefix_path.sh'
+[25.936s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.936s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.041s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_epuck'
+[26.041s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.041s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.147s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tiago'
+[26.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.253s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_turtlebot'
+[26.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.360s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_universal_robot'
+[26.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_epuck': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_epuck/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_epuck build --build-base /mnt/dev/webots_ros2/build/webots_ros2_epuck/build install --record /mnt/dev/webots_ros2/build/webots_ros2_epuck/install.log --single-version-externally-managed install_data
+[26.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_turtlebot': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_turtlebot build --build-base /mnt/dev/webots_ros2/build/webots_ros2_turtlebot/build install --record /mnt/dev/webots_ros2/build/webots_ros2_turtlebot/install.log --single-version-externally-managed install_data
+[26.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tiago': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tiago/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tiago build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tiago/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tiago/install.log --single-version-externally-managed install_data
+[26.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_universal_robot': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_universal_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_universal_robot build --build-base /mnt/dev/webots_ros2/build/webots_ros2_universal_robot/build install --record /mnt/dev/webots_ros2/build/webots_ros2_universal_robot/install.log --single-version-externally-managed install_data
+[26.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot' for CMake module files
+[26.648s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot' for CMake config files
+[26.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_turtlebot' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_turtlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_turtlebot build --build-base /mnt/dev/webots_ros2/build/webots_ros2_turtlebot/build install --record /mnt/dev/webots_ros2/build/webots_ros2_turtlebot/install.log --single-version-externally-managed install_data
+[26.649s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib'
+[26.649s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/bin'
+[26.649s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/pkgconfig/webots_ros2_turtlebot.pc'
+[26.649s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages'
+[26.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_turtlebot', 'pythonpath')
+[26.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/pythonpath.ps1'
+[26.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/pythonpath.dsv'
+[26.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/hook/pythonpath.sh'
+[26.650s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/bin'
+[26.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_turtlebot)
+[26.650s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.ps1'
+[26.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.dsv'
+[26.650s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.sh'
+[26.651s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.bash'
+[26.651s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.zsh'
+[26.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/colcon-core/packages/webots_ros2_turtlebot)
+[26.651s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck' for CMake module files
+[26.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_epuck' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_epuck/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_epuck build --build-base /mnt/dev/webots_ros2/build/webots_ros2_epuck/build install --record /mnt/dev/webots_ros2/build/webots_ros2_epuck/install.log --single-version-externally-managed install_data
+[26.652s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck' for CMake config files
+[26.652s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib'
+[26.652s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck/bin'
+[26.652s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/pkgconfig/webots_ros2_epuck.pc'
+[26.652s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages'
+[26.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_epuck', 'pythonpath')
+[26.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/pythonpath.ps1'
+[26.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/pythonpath.dsv'
+[26.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/hook/pythonpath.sh'
+[26.653s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_epuck/bin'
+[26.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_epuck)
+[26.653s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.ps1'
+[26.653s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.dsv'
+[26.654s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.sh'
+[26.654s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.bash'
+[26.654s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.zsh'
+[26.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/colcon-core/packages/webots_ros2_epuck)
+[26.654s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago' for CMake module files
+[26.655s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago' for CMake config files
+[26.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tiago' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tiago/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tiago build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tiago/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tiago/install.log --single-version-externally-managed install_data
+[26.655s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib'
+[26.655s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago/bin'
+[26.655s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/pkgconfig/webots_ros2_tiago.pc'
+[26.655s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages'
+[26.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tiago', 'pythonpath')
+[26.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/pythonpath.ps1'
+[26.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/pythonpath.dsv'
+[26.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/hook/pythonpath.sh'
+[26.656s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tiago/bin'
+[26.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_tiago)
+[26.656s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.ps1'
+[26.656s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.dsv'
+[26.656s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.sh'
+[26.656s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.bash'
+[26.656s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.zsh'
+[26.657s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/colcon-core/packages/webots_ros2_tiago)
+[26.657s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot' for CMake module files
+[26.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_universal_robot' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_universal_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_universal_robot build --build-base /mnt/dev/webots_ros2/build/webots_ros2_universal_robot/build install --record /mnt/dev/webots_ros2/build/webots_ros2_universal_robot/install.log --single-version-externally-managed install_data
+[26.657s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot' for CMake config files
+[26.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib'
+[26.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/bin'
+[26.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/pkgconfig/webots_ros2_universal_robot.pc'
+[26.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages'
+[26.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_universal_robot', 'pythonpath')
+[26.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/pythonpath.ps1'
+[26.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/pythonpath.dsv'
+[26.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/hook/pythonpath.sh'
+[26.659s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/bin'
+[26.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_universal_robot)
+[26.659s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.ps1'
+[26.659s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.dsv'
+[26.659s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.sh'
+[26.659s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.bash'
+[26.659s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.zsh'
+[26.659s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/colcon-core/packages/webots_ros2_universal_robot)
+[26.660s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tests' with build type 'ament_python'
+[26.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tests', 'ament_prefix_path')
+[26.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/ament_prefix_path.ps1'
+[26.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/ament_prefix_path.dsv'
+[26.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/ament_prefix_path.sh'
+[26.660s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.661s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.776s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tests'
+[26.776s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.776s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tests': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_universal_robot:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot:/mnt/dev/webots_ros2/install/webots_ros2_tiago:/mnt/dev/webots_ros2/install/webots_ros2_epuck:/mnt/dev/webots_ros2/install/webots_ros2_tesla:/mnt/dev/webots_ros2/install/webots_ros2_mavic:/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tests build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tests/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tests/install.log --single-version-externally-managed install_data
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests' for CMake module files
+[27.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2_tests' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_universal_robot:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot:/mnt/dev/webots_ros2/install/webots_ros2_tiago:/mnt/dev/webots_ros2/install/webots_ros2_epuck:/mnt/dev/webots_ros2/install/webots_ros2_tesla:/mnt/dev/webots_ros2/install/webots_ros2_mavic:/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2_tests build --build-base /mnt/dev/webots_ros2/build/webots_ros2_tests/build install --record /mnt/dev/webots_ros2/build/webots_ros2_tests/install.log --single-version-externally-managed install_data
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests' for CMake config files
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests/lib'
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests/bin'
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/pkgconfig/webots_ros2_tests.pc'
+[27.064s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/python3.10/site-packages'
+[27.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_tests', 'pythonpath')
+[27.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/pythonpath.ps1'
+[27.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/pythonpath.dsv'
+[27.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/hook/pythonpath.sh'
+[27.065s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2_tests/bin'
+[27.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_tests)
+[27.065s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.ps1'
+[27.066s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.dsv'
+[27.066s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.sh'
+[27.066s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.bash'
+[27.066s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.zsh'
+[27.066s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2_tests/share/colcon-core/packages/webots_ros2_tests)
+[27.066s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2' with build type 'ament_python'
+[27.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2', 'ament_prefix_path')
+[27.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/ament_prefix_path.ps1'
+[27.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/ament_prefix_path.dsv'
+[27.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/ament_prefix_path.sh'
+[27.067s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.067s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.185s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2'
+[27.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_tests:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot:/mnt/dev/webots_ros2/install/webots_ros2_tiago:/mnt/dev/webots_ros2/install/webots_ros2_epuck:/mnt/dev/webots_ros2/install/webots_ros2_tesla:/mnt/dev/webots_ros2/install/webots_ros2_mavic:/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2 build --build-base /mnt/dev/webots_ros2/build/webots_ros2/build install --record /mnt/dev/webots_ros2/build/webots_ros2/install.log --single-version-externally-managed install_data
+[27.478s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2' for CMake module files
+[27.478s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2' for CMake config files
+[27.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/webots_ros2/src/webots_ros2/webots_ros2' returned '0': AMENT_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_tests:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot:/mnt/dev/webots_ros2/install/webots_ros2_tiago:/mnt/dev/webots_ros2/install/webots_ros2_epuck:/mnt/dev/webots_ros2/install/webots_ros2_tesla:/mnt/dev/webots_ros2/install/webots_ros2_mavic:/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs:/mnt/dev/webots_ros2/install/webots_ros2_importer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control:/mnt/dev/webots_ros2/install/webots_ros2_driver:/mnt/dev/webots_ros2/install/webots_ros2_msgs LD_LIBRARY_PATH=/mnt/dev/webots_ros2/install/webots_ros2_control/lib:/mnt/dev/webots_ros2/install/webots_ros2_driver/lib:/mnt/dev/webots_ros2/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/webots_ros2/build/webots_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/dev/webots_ros2/install/webots_ros2/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tests/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tiago/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_epuck/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_tesla/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_mavic/lib/python3.10/site-packages:/mnt/dev/webots_ros2/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/mnt/dev/webots_ros2/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/webots_ros2 build --build-base /mnt/dev/webots_ros2/build/webots_ros2/build install --record /mnt/dev/webots_ros2/build/webots_ros2/install.log --single-version-externally-managed install_data
+[27.478s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2/lib'
+[27.479s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2/bin'
+[27.479s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2/lib/pkgconfig/webots_ros2.pc'
+[27.479s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2/lib/python3.10/site-packages'
+[27.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2', 'pythonpath')
+[27.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/pythonpath.ps1'
+[27.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/pythonpath.dsv'
+[27.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/hook/pythonpath.sh'
+[27.479s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/webots_ros2/install/webots_ros2/bin'
+[27.479s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2)
+[27.480s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/package.ps1'
+[27.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/package.dsv'
+[27.480s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/package.sh'
+[27.480s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/package.bash'
+[27.480s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/webots_ros2/install/webots_ros2/share/webots_ros2/package.zsh'
+[27.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/webots_ros2/install/webots_ros2/share/colcon-core/packages/webots_ros2)
+[27.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.481s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[27.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.485s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.488s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[27.488s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/webots_ros2/install/local_setup.ps1'
+[27.489s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/dev/webots_ros2/install/_local_setup_util_ps1.py'
+[27.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/webots_ros2/install/setup.ps1'
+[27.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/webots_ros2/install/local_setup.sh'
+[27.491s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/dev/webots_ros2/install/_local_setup_util_sh.py'
+[27.491s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/webots_ros2/install/setup.sh'
+[27.492s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/webots_ros2/install/local_setup.bash'
+[27.492s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/webots_ros2/install/setup.bash'
+[27.493s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/webots_ros2/install/local_setup.zsh'
+[27.493s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/webots_ros2/install/setup.zsh'

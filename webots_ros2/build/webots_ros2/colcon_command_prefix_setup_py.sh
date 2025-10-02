@@ -1,0 +1,12 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/mnt/dev/webots_ros2/install/webots_ros2_importer/share/webots_ros2_importer/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_msgs/share/webots_ros2_msgs/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_driver/share/webots_ros2_driver/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_control/share/webots_ros2_control/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_mavic/share/webots_ros2_mavic/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_tesla/share/webots_ros2_tesla/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_epuck/share/webots_ros2_epuck/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_tiago/share/webots_ros2_tiago/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.sh"
+. "/mnt/dev/webots_ros2/install/webots_ros2_tests/share/webots_ros2_tests/package.sh"
