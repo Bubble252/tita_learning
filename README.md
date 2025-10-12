@@ -3,18 +3,89 @@
 
 ## 启动conda 虚拟环境
 
-
+```
+conda activate tita2
+```
 
 ## 进入正确路径
 
 
 ```
+cd ~/桌面/tita/tita_rl
+```
+
+## 训练
+
+```
+python train.py --task=tita_constraint --headless
+```
+
+你并不需要可视化
+
+## 转化pt文件为onnx格式
+实在没怎么搞懂他官方的那个export文件怎么用 遂自己整了一个
+
+```
+python export_direct.py \
+>     --pt_path model_11700.pt \
+>     --actor_class ActorCriticBarlowTwins \
+>     --obs_size 586 \
+>     --priv_obs_size 67 \
+>     --action_size 8 \
+>     --num_priv_latent 36 \
+>     --num_hist 10 \
+>     --num_prop 33 \
+>     --num_scan 187 \
+>     --activation elu
+```
+
+
+## 进入docker容器
+
+这个挂载的路径是webots那个上级路径
+```
+sudo docker run -v ~/桌面/tita:/mnt/dev -w /mnt/dev --rm  --gpus all --net=host --privileged -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1  -e CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda -it registry.cn-guangzhou.aliyuncs.com/ddt_robot/ubuntu:webot2023b-v1
+```
+
+
+## 将onnx转为.engine
+到onnx下的路径
+
+```
+/usr/src/tensorrt/bin/trtexec --onnx=policy.onnx --saveEngine=model_gn.engine
+```
+
+
+## 启动webots(在此之前记得依据官方文档修改engine路径)
+在容器外运行
+```
+xhost +local:root  # 允许本地 root 用户（容器内默认是 root）访问 X11
+```
+然后进入应该有的目录 启动webots
+
+```
+cd tita_rl_sim2sim2real
+
+
+sudo mkdir -p /usr/share/robot_description
+
+sudo cp -r src/tita_locomotion/tita_description/tita /usr/share/robot_description/
+
+source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch locomotion_bringup sim_bringup.launch.py
 
 ```
 
 
+## 方向盘
 
 
+```
+docker exec -it amazing_booth /bin/bash #从另外一个终端进入 这个‘amazing booth’
+
+cd tita_rl_sim2sim2real
+
+source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 run keyboard_controller keyboard_controller_node --ros-args -r __ns:=/tita
+```
 ## 文件整理
 
 
