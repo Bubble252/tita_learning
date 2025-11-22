@@ -11,7 +11,23 @@ conda activate tita2
 
 
 ```
-cd ~/桌面/tita/tita_rl
+cd ~/桌面## 📚 相关文档导航
+
+- **[SSH 部署指南](SSH_DEPLOYMENT_GUIDE.md)** ⭐ **推荐首读** - 本地开发到机器人部署的完整流程
+- **[部署指南](DEPLOYMENT_GUIDE.md)** - 详细的实机部署说明，包含文件结构、编译命令和 ROS2 接口详解
+- **[ROS2 接口速查](ROS2_INTERFACE_QUICK_REFERENCE.md)** - ROS2 话题、消息类型、控制命令速查表
+
+### 💡 快速解答
+
+**Q: 为什么本地运行 `ros2 launch joy_controller` 报错找不到包？**  
+A: 因为 `joy_controller` 在 `tita_rl_sim2sim2real` 工作空间中，需要先编译并 source。如果只是要部署到机器人，不需要在本地编译，直接用 `scp` 传输源码到机器人即可。详见 [SSH 部署指南](SSH_DEPLOYMENT_GUIDE.md)。
+
+---
+
+## 文件整理
+
+
+### algorithm(PPO)a/tita_rl
 ```
 
 ## 训练
